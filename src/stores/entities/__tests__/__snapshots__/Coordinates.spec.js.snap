@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coordinates should create an instance of Coordinates correctly 1`] = `
+Object {
+  "latitude": null,
+  "longitude": null,
+}
+`;

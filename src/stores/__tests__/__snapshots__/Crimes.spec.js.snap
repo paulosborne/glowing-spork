@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store: Crimes getCrimesAtLocation() should call the crimes-by-location API correctly 1`] = `
+Array [
+  Object {
+    "category": "vehicle-crime",
+    "context": "",
+    "id": 72264228,
+    "location": Object {
+      "latitude": "52.590250",
+      "longitude": "-2.130356",
+      "street": Object {
+        "name": "On or near Sports/recreation Area",
+      },
+    },
+    "location_type": "Force",
+    "month": "2019-02",
+    "outcome_status": Object {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2019-03",
+    },
+  },
+  Object {
+    "category": "burglary",
+    "context": "",
+    "id": 72264229,
+    "location": Object {
+      "latitude": "52.590250",
+      "longitude": "-2.130356",
+      "street": Object {
+        "name": "On or near Sports/recreation Area",
+      },
+    },
+    "location_type": "Force",
+    "month": "2019-02",
+    "outcome_status": Object {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2019-03",
+    },
+  },
+]
+`;
+
+exports[`Store: Crimes should create the store correctly 1`] = `
+Object {
+  "categories": Object {},
+  "coordinates": Object {
+    "latitude": null,
+    "longitude": null,
+  },
+  "data": Array [],
+  "postcode": null,
+}
+`;

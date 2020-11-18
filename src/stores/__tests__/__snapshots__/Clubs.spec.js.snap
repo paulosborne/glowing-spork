@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store: Clubs should create the store correctly 1`] = `
+Object {
+  "data": Array [],
+  "selected": null,
+}
+`;

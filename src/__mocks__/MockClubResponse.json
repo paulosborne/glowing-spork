@@ -1,0 +1,19 @@
+{
+  "id": 354,
+  "area": {
+    "id": 2072,
+    "name": "England"
+  },
+  "name": "Crystal Palace FC",
+  "shortName": "Crystal Palace",
+  "tla": "CRY",
+  "crestUrl": "https://crests.football-data.org/354.svg",
+  "address": "Whitehorse Lane London SE25 6PU",
+  "phone": "+44 (020) 87686000",
+  "website": "http://www.cpfc.co.uk",
+  "email": "info@cpfc.co.uk",
+  "founded": 1905,
+  "clubColors": "Red / Blue",
+  "venue": "Selhurst Park",
+  "lastUpdated": "2020-11-12T02:09:48Z"
+}

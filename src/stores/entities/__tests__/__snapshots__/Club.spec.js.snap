@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Club should create an instance of a team correctly 1`] = `
+Object {
+  "address": "Whitehorse Lane London SE25 6PU",
+  "clubColors": "Red / Blue",
+  "crestUrl": "https://crests.football-data.org/354.svg",
+  "founded": 1905,
+  "id": 354,
+  "name": "Crystal Palace FC",
+  "shortName": "Crystal Palace",
+  "venue": "Selhurst Park",
+}
+`;

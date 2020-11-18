@@ -1,0 +1,39 @@
+{
+  "status": 200,
+  "result": {
+    "postcode": "WV1 4QR",
+    "quality": 1,
+    "eastings": 391207,
+    "northings": 299163,
+    "country": "England",
+    "nhs_ha": "West Midlands",
+    "longitude": -2.131226,
+    "latitude": 52.590195,
+    "european_electoral_region": "West Midlands",
+    "primary_care_trust": "Wolverhampton City",
+    "region": "West Midlands",
+    "lsoa": "Wolverhampton 020F",
+    "msoa": "Wolverhampton 020",
+    "incode": "4QR",
+    "outcode": "WV1",
+    "parliamentary_constituency": "Wolverhampton South West",
+    "admin_district": "Wolverhampton",
+    "parish": "Wolverhampton, unparished area",
+    "admin_county": null,
+    "admin_ward": "St Peter's",
+    "ced": null,
+    "ccg": "NHS Wolverhampton",
+    "nuts": "Wolverhampton",
+    "codes": {
+      "admin_district": "E08000031",
+      "admin_county": "E99999999",
+      "admin_ward": "E05001335",
+      "parish": "E43000185",
+      "parliamentary_constituency": "E14001051",
+      "ccg": "E38000210",
+      "ccg_id": "06A",
+      "ced": "E99999999",
+      "nuts": "UKG39"
+    }
+  }
+}
