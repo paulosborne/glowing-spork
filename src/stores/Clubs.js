@@ -44,6 +44,13 @@ const Clubs = types
         self.selected = null;
       }
     },
+
+    /**
+     * Clears the currently selected club
+     */
+    clearSelected() {
+      self.selected = null;
+    }
   }));
 
 export default Clubs;
