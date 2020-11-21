@@ -2,6 +2,9 @@
 
 This app allows you to visualise crimes that occurred at Premier League grounds for a given month.
 
+## Demo
+A working demo of the application can be found [here](https://glowing-spork-app.herokuapp.com/).
+
 ## Instructions
 
 To build the app locally follow these steps:
