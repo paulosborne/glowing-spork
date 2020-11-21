@@ -1,10 +1,10 @@
 export { default as ClubDetails } from './ClubDetails/ClubDetails';
-export { default as ClubPicker } from './ClubPicker/ClubPicker';
 export { default as CrimeCard } from './CrimeCard/CrimeCard';
 export { default as CrimeCategories } from './CrimeCategories/CrimeCategories';
 export { default as CrimeTable } from './CrimeTable/CrimeTable';
+export { default as ClubScroller } from './ClubScroller/ClubScroller';
 export { default as CrimeViewer } from './CrimeViewer/CrimeViewer';
 export { default as MapViewer } from './MapViewer/MapViewer';
+export { default as MonthNavigator } from './MonthNavigator/MonthNavigator';
 export { default as Header } from './Header/Header';
 export { default as Panel } from './Panel/Panel';
-export { default as WelcomeScreen } from './WelcomeScreen/WelcomeScreen';

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
 import isEmpty from 'lodash.isempty';
+import format from 'date-fns/format';
 import { useRootStore, useSelectedClub } from '../../hooks';
 import CrimeCard from '../CrimeCard/CrimeCard';
 import CrimeTable from '../CrimeTable/CrimeTable';
@@ -29,10 +30,10 @@ const CrimeViewer = observer(() => {
   }, [date, crimes, crimes.coordinates.longitude]);
 
   return (
-    <div className="flex flex-col w-full sm:flex-row">
-      <div className="flex-1">
+    <div>
+      <div>
         {!loaded && (
-          <Panel className="m-1 justify-center">
+          <Panel className="justify-center">
             <div>
               <Loader type="ThreeDots" height={20} width={30} color="gray" />
             </div>
@@ -40,8 +41,8 @@ const CrimeViewer = observer(() => {
         )}
 
         {loaded && isEmpty(crimes.visible) && (
-          <Panel className="m-1 justify-center">
-            <div>No crimes reported for this period.</div>
+          <Panel className="justify-center">
+            <div>No crimes reported for {format(date, 'MMMM YYY')}.</div>
           </Panel>
         )}
 
@@ -52,7 +53,7 @@ const CrimeViewer = observer(() => {
             ))}
         </div>
 
-        <div className="hidden md:flex m-1">
+        <div className="hidden md:flex">
           {loaded && !isEmpty(crimes.visible) && <CrimeTable />}
         </div>
       </div>

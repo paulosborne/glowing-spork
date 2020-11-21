@@ -44,6 +44,15 @@ const Clubs = types
         self.selected = null;
       }
     },
+
+    /**
+     * Selects a random club
+     */
+    selectRandom() {
+      const index = Math.floor(Math.random() * 6) + 1;
+      const { id } = self.data[index];
+      self.selectClub(id);
+    },
   }));
 
 export default Clubs;

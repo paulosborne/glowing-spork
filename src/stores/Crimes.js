@@ -22,9 +22,19 @@ const Crimes = types
         .map(({ url }) => url);
     },
     get visible() {
-      return self.data.filter(crime =>
-        self.selectedCategories.includes(crime.category),
-      );
+      return self.data
+        .filter(crime => self.selectedCategories.includes(crime.category))
+        .sort((a, b) => (a.id < b.id ? 1 : -1));
+    },
+    get frequencyColor() {
+      switch (true) {
+        case self.data.length > 0 && self.data.length < 10:
+          return 'bg-orange-500';
+        case self.data.length > 10:
+          return 'bg-red-600';
+        default:
+          return 'bg-green-500';
+      }
     },
   }))
   .actions(self => ({

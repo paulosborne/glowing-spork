@@ -12,12 +12,12 @@ const CrimeCategories = observer(() => {
   };
 
   return (
-    <div className="p-3 hidden sm:flex sm:flex-col h-screen">
-      <div>Crime Categories</div>
+    <div className="bg-white sm:flex sm:flex-col">
+      <div className="px-2 py-2">Categories</div>
       <div>
         {crimes.categoryList.map(category => (
-          <div key={category.url}>
-            <label className="text-xs" htmlFor={category.url}>
+          <div key={category.url} className="px-2">
+            <label className="text-sm" htmlFor={category.url}>
               <input
                 type="checkbox"
                 id={category.url}
