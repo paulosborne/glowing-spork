@@ -38,5 +38,19 @@ describe('Store: Clubs', () => {
       );
       expect(instance.data.length).toEqual(teams.length);
     });
+
+    it('should select another club if the previously selected club is no longer in the league', async () => {
+      axios.get.mockResolvedValue({ data: { teams } });
+      await instance.fetchByCompetitionId(COMPETITION_ID, SEASON);
+      const selectedId = instance.selected.id;
+      const omitSelected = teams.filter(
+        ({ id }) => id !== instance.selected.id,
+      );
+      axios.get.mockResolvedValue({
+        data: { teams: omitSelected },
+      });
+      await instance.fetchByCompetitionId(COMPETITION_ID, SEASON);
+      expect(instance.selected.id).not.toEqual(selectedId);
+    });
   });
 });

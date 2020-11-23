@@ -30,7 +30,20 @@ const Clubs = types
           season,
         },
       });
+
+      // clear selected club if it doesn't exist in the new data
+      if (
+        self.selected !== null &&
+        !data.teams.find(({ id }) => id === self.selected.id)
+      ) {
+        self.selected = null;
+      }
+
       self.data.replace(data.teams);
+
+      if (self.selected === null) {
+        self.selectRandom();
+      }
     }),
 
     /**
