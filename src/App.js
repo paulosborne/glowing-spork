@@ -24,9 +24,6 @@ export default observer(() => {
     const fetchTeams = async () => {
       await clubs.fetchByCompetitionId(2021, year);
       await crimes.getCrimeCategories(year, month + 1);
-      if (clubs.selected === null) {
-        clubs.selectRandom();
-      }
     };
     fetchTeams();
   }, [clubs, year, month, crimes]);
